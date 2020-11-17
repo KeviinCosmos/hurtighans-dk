@@ -1,10 +1,9 @@
 import React from 'react'
-// import headerStyles from './header.module.css'
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+import footerStyles from '../styles/Footer.module.css'
 
 
 const Footer = () => (
-    <footer>
+    <footer className={footerStyles.footer}>
         <div className="container">
             <span className="text-muted">This is our footer container</span>
         </div>

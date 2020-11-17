@@ -1,3 +1,14 @@
-.example {
-    color: #287e0e;
+.navbarWrapper {
+    box-shadow: 0 0 15px 0 #000 !important;
+    background: red;
+    display: block;
+    padding-bottom: 2px;
+}
+
+.navbarWrapper::after {
+    content:"";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: cornflowerblue;
 }
