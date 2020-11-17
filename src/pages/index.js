@@ -5,12 +5,13 @@ import Footer from "../components/Footer"
 
 
 const Home = () => (
-  <div>
+  <div classname="site">
     <Header></Header>
+    
     <div className="container">
-    <h2>Hello world! :) </h2>
-    <p>Go to <Link to="/test/">test page here</Link></p>
-    <img src="https://cosmosco.dk/wp-content/uploads/2020/03/keviin-cosmos-isoleret.png.webp" width="200" alt="Keviin Cosmos"/>
+      <h2>Hello world! :) </h2>
+      <p>Go to <Link to="/test/">test page here</Link></p>
+      <img src="https://cosmosco.dk/wp-content/uploads/2020/03/keviin-cosmos-isoleret.png.webp" width="200" alt="Keviin Cosmos"/>
     </div>
 
     <Footer></Footer>
