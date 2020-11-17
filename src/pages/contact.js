@@ -1,15 +1,10 @@
 import React from 'react'
 import {navigate} from "gatsby"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import PrimaryLayout from "../layouts/PrimaryLayout"
 import {Form, Button} from 'react-bootstrap'
 
 const Conact = () => (
-    <div className="site">
-
-        <Header></Header>
-
-        <div className="container main">
+    <PrimaryLayout>
             <h1>Contact us today</h1>
             <p>Let's grab a coffee?</p>
             <Button onClick={()=>navigate("/")}>Navigate to Homepage</Button>
@@ -33,10 +28,8 @@ const Conact = () => (
                 </Form.Group>
             </Form>
             </div>
-        </div>
-
-        <Footer></Footer>
-    </div>
+        
+        </PrimaryLayout>
     
 )
 

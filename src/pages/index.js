@@ -1,15 +1,13 @@
 import React from "react"
 import {Link} from "gatsby"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import PrimaryLayout from "../layouts/PrimaryLayout"
 import Post from "../components/Post"
 
 
-const Home = () => (
-  <div classname="site">
-    <Header></Header>
+export default () => (
 
-    <div className="container main">
+  <PrimaryLayout>
+    
       <h1>Hello world! :) </h1>
       <p>Go to <Link to="/about/">More about us</Link></p>
       <img src="https://cosmosco.dk/wp-content/uploads/2020/03/keviin-cosmos-isoleret.png.webp" width="200" alt="Keviin Cosmos"/>
@@ -19,13 +17,10 @@ const Home = () => (
             <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
             <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
             <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
-          </div>
-          
+          </div> 
         </div>
-    </div>
 
-    <Footer></Footer>
- </div>
+  </PrimaryLayout> 
+ 
 )
 
-export default Home;
