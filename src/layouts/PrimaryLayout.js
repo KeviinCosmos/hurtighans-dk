@@ -8,7 +8,9 @@ const PrimaryLayout = (props) => (
     <Header />
     <div className="container main">  
 
-        {props.children}
+        <div className={props.column}>
+            {props.children}
+        </div>
 
     </div>
     <Footer />
