@@ -4,3 +4,9 @@ body {
     margin: 0;
     padding-bottom: 60px;
 }
+
+.ccPostGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}

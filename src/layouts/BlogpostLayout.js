@@ -4,6 +4,8 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import SEO from "../components/SEO"
 import innertext from "innertext"
+import "@wordpress/block-library/build-style/style.css"
+
 const BlogpostLayout = ({ data }) => {
   const post = data.wordpressPost
   return (
