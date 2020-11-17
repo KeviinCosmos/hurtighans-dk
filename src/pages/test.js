@@ -1,9 +1,11 @@
-import React from 'react';
+import React from 'react'
+import {navigate} from "gatsby"
 
 const Test = () => (
     <div>
         <h1>Test page here</h1>
-        <p>Go to back to <a href="/">the homepage</a></p>
+        <p>Hello you, how are you?</p>
+        <button onClick={()=>navigate("/")}>Navigate to Homepage</button>
     </div>
 )
 
