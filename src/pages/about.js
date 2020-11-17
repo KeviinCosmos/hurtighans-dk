@@ -1,18 +1,15 @@
-import React from 'react'
-import {navigate} from "gatsby"
+import React from "react"
 import PrimaryLayout from "../layouts/PrimaryLayout"
-
-const About = () => (
-    <PrimaryLayout>
-
-        
-            <h1>More about us here</h1>
-            <p>Hello you, how are you?</p>
-            <button onClick={()=>navigate("/")}>Navigate to Homepage</button>
-       
-
-        </PrimaryLayout>
-    
+export default () => (
+  <PrimaryLayout column="col-xs-6">
+    <h1>About Us</h1>
+    <p>
+      Departure so attention pronounce satisfied daughters am. But shy tedious
+      pressed studied opinion entered windows off. Advantage dependent suspicion
+      convinced provision him yet. Timed balls match at by rooms we. Fat not boy
+      neat left had with past here call. Court nay merit few nor party learn.
+      Why our year her eyes know even how. Mr immediate remaining conveying
+      allowance do or.
+    </p>
+  </PrimaryLayout>
 )
-
-export default About;

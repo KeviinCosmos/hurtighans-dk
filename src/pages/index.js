@@ -1,26 +1,38 @@
 import React from "react"
-import {Link} from "gatsby"
+import { graphql } from "gatsby"
 import PrimaryLayout from "../layouts/PrimaryLayout"
 import Post from "../components/Post"
 
 
-export default () => (
+export default ({ data }) => {
+  console.log(data)
+  return (
+    <PrimaryLayout column="col-xs-6">
+      {data.allWordpressPost.nodes.map(node => (
+        <Post
+          alt={node.featured_media.slug}
+          image={node.featured_media.source_url}
+          title={node.title}
+          excerpt={node.excerpt}
+          readMore={node.slug}
+        />
+      ))}
+    </PrimaryLayout>
+  )
+}
 
-  <PrimaryLayout>
-    
-      <h1>Hello world! :) </h1>
-      <p>Go to <Link to="/about/">More about us</Link></p>
-      <img src="https://cosmosco.dk/wp-content/uploads/2020/03/keviin-cosmos-isoleret.png.webp" width="200" alt="Keviin Cosmos"/>
-
-        <div className="posts">
-          <div className="row justify-content-md-center pt-5 pb-5">
-            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
-            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
-            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
-          </div> 
-        </div>
-
-  </PrimaryLayout> 
- 
-)
-
+export const query = graphql`
+  {
+  allWordpressPost{
+    nodes {
+      slug
+      title
+      excerpt
+      featured_media {
+        source_url
+        slug
+      }
+    }
+  }
+}
+`

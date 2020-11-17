@@ -1,21 +1,21 @@
-import React from 'react'
+import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import SEO from "../components/SEO"
 
-
-const PrimaryLayout = (props) => (
-    <div classname="site">
+const PrimaryLayout = props => (
+  <div>
+    <SEO />
     <Header />
-    <div className="container main">  
-
-        <div className={props.column}>
-            {props.children}
+    <main>
+      <div className="container">
+        <div className="row justify-content-md-center">
+          <div className={props.column}>{props.children}</div>
         </div>
-
-    </div>
+      </div>
+    </main>
     <Footer />
- </div> 
+  </div>
 )
 
-export default PrimaryLayout;
-
+export default PrimaryLayout
