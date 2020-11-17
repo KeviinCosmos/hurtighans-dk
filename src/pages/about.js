@@ -9,7 +9,7 @@ const About = () => (
         <Header></Header>
 
         <div className="container main">
-            <h2>More about us here</h2>
+            <h1>More about us here</h1>
             <p>Hello you, how are you?</p>
             <button onClick={()=>navigate("/")}>Navigate to Homepage</button>
         </div>
