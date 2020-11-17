@@ -16,9 +16,9 @@ const Home = () => (
 
         <div className="posts">
           <div className="row justify-content-md-center p-3">
-            <div className="col-sm-4"><Post></Post></div>
-            <div className="col-sm-4"><Post></Post></div>
-            <div className="col-sm-4"><Post></Post></div>
+            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
+            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
+            <div className="col-sm-4"><Post title="This is our first post" excerpt="this is a short excerpt"></Post></div>
           </div>
           
         </div>

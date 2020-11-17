@@ -1,11 +1,11 @@
 import React from 'react'
-import headerStyles from '../styles/Header.module.css'
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
+// import headerStyles from '../styles/Header.module.css'
+import {Navbar, Nav} from 'react-bootstrap'
 import {Link} from 'gatsby'
 
 
 export default (props) => (
-    <header className={headerStyles.navbarWrapper}>
+    <header>
         <Navbar bg="dark" expand="lg" fixed="top">
             <Navbar.Brand href="/">Hurtighans.dk</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
