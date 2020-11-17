@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export default props => (
   <header>
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="/">Gatsby-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="/">HurtigHans.dk</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

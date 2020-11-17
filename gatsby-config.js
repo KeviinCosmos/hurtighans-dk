@@ -7,11 +7,11 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Gatsby-Bootstrap",
-    description: "This is the description of our website",
+    title: "HurtigHAns.dk",
+    description: "En hjemmeside med fart på",
     keywords: "gatsby, gatsbyjs project, gatsby bootstrap",
-    image: "/static/gatsby.jpg",
-    siteUrl: "http://localhost:8000/",
+    image: "/static/kc.jpg",
+    siteUrl: "https://hurtighans.dk/",
     url: "https://www.gatsbyjs.org/",
   },
   plugins: [
