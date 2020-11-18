@@ -5,8 +5,10 @@ body {
     padding-bottom: 60px;
 }
 
-.ccPostGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+@media (min-width: 768px) { 
+    .ccPostGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
 }
